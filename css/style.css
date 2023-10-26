@@ -19,3 +19,28 @@ body {
     grid-template-rows: repeat(3, min-content);
     gap: 2rem;
 }
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    height: 4rem;
+}
+
+.sidebar section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item img {
+    height: 2rem;
+}
