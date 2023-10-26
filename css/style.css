@@ -18,18 +18,25 @@ body {
 
 .sidebar {
     padding: 1rem;
-    background-color: aquamarine;
+    background-color: #1992D4;
 
     grid-area: 1 / 1 / -1 / 2;
 
     display: grid;
     grid-template-rows: repeat(3, min-content);
     gap: 2rem;
+    
+    color: white;
+}
+
+.sidebar h2 {
+    font-size: 32px;
 }
 
 .title {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .title svg {
@@ -47,6 +54,16 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.item a:hover {
+    text-decoration: underline;
+    
 }
 
 .item svg {
