@@ -32,8 +32,9 @@ body {
     align-items: center;
 }
 
-.title img {
+.title svg {
     height: 4rem;
+    fill: white;
 }
 
 .sidebar section {
@@ -48,6 +49,7 @@ body {
     gap: 1rem;
 }
 
-.item img {
+.item svg {
     height: 2rem;
+    fill: white;
 }
