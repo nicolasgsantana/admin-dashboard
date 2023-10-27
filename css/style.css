@@ -70,3 +70,27 @@ body {
     height: 2rem;
     fill: white;
 }
+
+header {
+    grid-area: 1 / 2 / 2 / -1;
+    
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+
+    background-color: white;
+    box-shadow: 0px 4px 10px gray;
+}
+
+header svg {
+    height: 28px;
+}
+
+.mini-profile img {
+    height: 80px;
+    border-radius: 100%
+}
+
+.profile img {
+    height: 120px;
+    border-radius: 100%;
+}
