@@ -131,16 +131,23 @@ header svg {
     grid-template-rows: repeat(2, min-content);
     column-gap: 1rem;
     row-gap: 0.5rem;
+
+    font-weight: bold;
 }
 
-.greeting {
+.profile p {
+    font-size: 20px;
+}
+
+p.greeting {
     align-self: end;
+    font-size: 14px;
 }
 
 .profile img {
     grid-area: 1 / 1 / -1 / 2;
 
-    height: 5rem;
+    height: 6rem;
     border-radius: 100%;
 }
 
