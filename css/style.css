@@ -13,7 +13,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: min-content 5fr;
 }
 
 .sidebar {
@@ -72,10 +72,13 @@ body {
 }
 
 header {
+    padding: 0.5rem 2rem;
+
     grid-area: 1 / 2 / 2 / -1;
     
     display: grid;
     grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(2, 1fr);
 
     background-color: white;
     box-shadow: 0px 4px 10px gray;
@@ -85,12 +88,48 @@ header svg {
     height: 28px;
 }
 
+.search-bar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    display: flex;
+    align-items: center;
+}
+
+.mini-profile {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .mini-profile img {
-    height: 80px;
+    height: 3rem;
     border-radius: 100%
 }
 
+.profile {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, min-content);
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+}
+
+.greeting {
+    align-self: end;
+}
+
 .profile img {
-    height: 120px;
+    grid-area: 1 / 1 / -1 / 2;
+
+    height: 5rem;
     border-radius: 100%;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
