@@ -2,6 +2,7 @@
 
 
 :root {
+    --main-color: #1992D4;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -18,7 +19,7 @@ body {
 
 .sidebar {
     padding: 1rem;
-    background-color: #1992D4;
+    background-color: var(--main-color);
 
     grid-area: 1 / 1 / -1 / 2;
 
@@ -156,4 +157,24 @@ p.greeting {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.options button {
+    background-color: var(--main-color);
+    height: 2.5rem;
+    width: 7rem;
+    border: 0;
+    border-radius: 2.5rem;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.options button:hover {
+    background-color: color-mix(in srgb, var(--main-color) 85%, white);
+}
+
+.options button:active {
+    background-color: color-mix(in srgb, var(--main-color) 90%, black);
 }
