@@ -3,6 +3,7 @@
 
 :root {
     --main-color: #1992D4;
+    --background-color: #E2E8F0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -178,4 +179,38 @@ p.greeting {
 
 .options button:active {
     background-color: color-mix(in srgb, var(--main-color) 90%, black);
+}
+
+main {
+    background-color: var(--background-color);
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-area: 1 / 1 / -1 / 2;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+    gap: 2rem;
+}
+
+.projects h2 {
+    grid-area: 1 / 1 / 2 / -1;
+    align-self: end;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px -15px black;
+    padding: 1rem;
+}
+
+.card img {
+    height: 1.5rem;
 }
