@@ -209,7 +209,7 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 20px -15px black;
-    padding: 1rem 2rem 2rem 1rem;
+    padding: 1rem 2rem 4rem 1rem;
 }
 
 .card .decoration {
@@ -223,10 +223,19 @@ main {
 }
 
 .card .icons {
-    padding: 0.5rem;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    bottom: 1rem;
+    right: 1rem;
+
+    display: flex;
+    gap: 1rem;
+
+}
+
+.card .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .card img {
