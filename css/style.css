@@ -205,10 +205,21 @@ main {
 }
 
 .card {
+    position: relative;
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 20px -15px black;
     padding: 1rem;
+}
+
+.card .decoration {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    border-radius: 10px 0 0 10px;
+    background-color: hsl(345, 100%, 79%);
 }
 
 .card img {
