@@ -209,7 +209,7 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 20px -15px black;
-    padding: 1rem;
+    padding: 1rem 2rem 2rem 1rem;
 }
 
 .card .decoration {
@@ -220,6 +220,13 @@ main {
     width: 10px;
     border-radius: 10px 0 0 10px;
     background-color: hsl(345, 100%, 79%);
+}
+
+.card .icons {
+    padding: 0.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .card img {
