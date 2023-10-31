@@ -186,7 +186,6 @@ main {
     
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 
 .projects {
@@ -201,7 +200,6 @@ main {
 
 .projects h2 {
     grid-area: 1 / 1 / 2 / -1;
-    align-self: end;
 }
 
 .card {
@@ -240,4 +238,28 @@ main {
 
 .card img {
     height: 1.5rem;
+}
+
+.announcements {
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    gap: 2rem;
+}
+
+.announcements>div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px -15px black;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, min-content);
+    gap: 1.5rem;
+}
+
+.announcements .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
